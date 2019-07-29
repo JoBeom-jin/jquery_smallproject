@@ -21,7 +21,7 @@
 
 <body  style="background-color: #81DAF5">
 
-    <div class="container">
+    <div class="container border border-dark">
             <h1 class="text-center">다트프린스</h1>
         <div class="row p-3">
             <div class="col-lg-6">
@@ -38,35 +38,82 @@
 
                 </ul>
             </div>
-            <img class="col-lg-6" src="../img/content_img2.jpg" height="300px">
+            <img class="col-lg-6" src="./content_img2.jpg" height="300px">
         </div>
 
         <div class="row p-3">
-                <div class="col-lg-4">
-                        <img src="../img/content_img2_01.jpg" width="100%" height="250px">
+                <div style="background-color: #81DAF5" class="card col-lg-4">
+                        <img src="./content_img2_01.jpg" width="100%" height="250px">
                         <h5>청소년플레이어 입.장.가.능!</h5>
                         <p>강남역 다트프린스에서는 청소년도 출입할 수 있도록 주류를 판매하지 않는 스포츠시설입니다. 흡연공간이 분리되어 쾌적하고 깔끔하게 즐길 수 있는
                             전체이용가 오락공간입니다.
                         </p>
                     </div>
         
-                    <div class="col-lg-4">
-                        <img src="../img/content_img2_02.jpg" width="100%" height="250px">
+                    <div style="background-color: #81DAF5" class="card col-lg-4">
+                        <img src="./content_img2_02.jpg" width="100%" height="250px">
                         <h5>다트초보 무료 티칭서비스!</h5>
                         <p>다티스트들의 뜨거운 사랑을 받는곳! 다트프린스! 초보자분들은 피닉스 스타즈 전문 선수들이 1:1티칭 서비스를 무료로 해드리고 있습니다.</p>
         
                     </div>
         
-                    <div class="col-lg-4">
-                        <img src="../img/content_img2_03.jpg" width="100%" height="250px">
-                        <h5>온몸으로 즐기는 최고의 몰입감!
-                            익스트림 어트랙션</h5>
+                    <div style="background-color: #81DAF5" class="card col-lg-4">
+                        <img src="./content_img2_03.jpg" width="100%" height="250px">
+                        <h5>강남역 11번 출구 1분 거리!</h5>
                         <p>강남역 11번 출구 강남스타일 조형물 부근에 위치하고 있어 찾기도 쉽고 자체적으로 카페를 . 윤영하고 있도 즐겁고 몸도 즐거운 1석2조의 공간입니다.</p>
                     </div>
         </div>
 
 
+        <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit">후기 작성</button>
+        <button class="btn btn-outline-primary" onclick="history.back(-1);">나가기</button>
     </div>
+
+
+    <div class="modal fade" id="edit">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">후기 작성</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/edit_page">
+                            <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">제목</span>
+                                </div>
+                                <input type="text" name="title" class="form-control" placeholder="제목">
+                            </div>
+    
+                            <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">내용</span>
+                                </div>
+                                <input type="text" name="content" class="form-control" placeholder="내용">
+                            </div>
+    
+                            <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">작성자</span>
+                                </div>
+                                <input type="text" name="name" class="form-control" placeholder="작성자">
+                            </div>
+    
+    
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-outline-secondary">Submit</button>
+                            </div>
+    
+                        </form>
+    
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>

@@ -1,12 +1,8 @@
 <html>
 
 <head>
-    <title>login</title>
-
-    <script src="https://kit.fontawesome.com/da855165bc.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <title>Home</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -16,17 +12,20 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
 </head>
 
+
+
+
 <body>
+
+        <div>
+                <a href="/login" class="ml-3">Sign In </a>
+            <a href="/signup" >Sign Up</a>
+        </div>
     <div>
-        <a href="/login" class="ml-3">Sign In </a>
-        <a href="/signup">Sign Up</a>
-    </div>
-    <div>
-            <a href="/"><img src="./logo.png" style="margin-left: auto; margin-right: auto; display: block" width="180px"
-                height="80px"></a>
+        <a href="/"><img src="./logo.png" style="margin-left: auto; margin-right: auto; display: block" width="180px"
+            height="80px"></a>
     </div>
     <nav class="navbar navbar-expand-sm bg-info navbar-dark justify-content-between ">
         <ul class="navbar-nav ">
@@ -60,24 +59,18 @@
 
     </nav>
 
-    <form action="/login" method="GET">
-        <div class="container mt-5 col-lg-3">
-            <div class="form-group">
-                <label for="text">ID</label>
-                <input type="text" name="text" class="form-control" id="text" placeholder="ID">
-            </div>
-            <div class="form-group ">
-                <label for="pwd">Password</label>
-                <input type="password" name="password" class="form-control col" placeholder="Password">
-            </div>
-            <div class="text-center">
-                <button type="submit" class="btn btn-primary col-lg-12">로그인</button>
-            </div>
+
+    
+        <h2 class="text-center">이벤트</h2>
+        <div class="row align-center p-3">
+                <img  class="col-lg-6 mt-2" src="./banner1.PNG">
+                <img  class="col-lg-6 mt-2" src="./banner2.PNG">
+                <img  class="col-lg-6 mt-2" src="./banner3.PNG">
+                <img  class="col-lg-6 mt-2" src="./banner4.PNG">
+                <img  class="col-lg-6 mt-2" src="./banner5.PNG">
+                <img  class="col-lg-6 mt-2" src="./banner6.PNG">           
         </div>
-
-    </form>
-
-
+    
 
 
 
@@ -94,5 +87,7 @@
         </div>
     </footer>
 </body>
+
+
 
 </html>
