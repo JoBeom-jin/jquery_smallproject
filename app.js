@@ -7,7 +7,7 @@ const port = 3000
 
 
 app.use(express.static('beomjin_img'))
-
+app.use(express.static('img'))
 
 const path = require('path');
 const router = express.Router();
