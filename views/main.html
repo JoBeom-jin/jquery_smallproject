@@ -19,13 +19,13 @@
 
 <body>
 
-        <div>
-                <a href="/login" class="ml-3">Sign In </a>
-            <a href="/signup" >Sign Up</a>
-        </div>
     <div>
-        <a href="/"><img src="../img/logo.png" style="margin-left: auto; margin-right: auto; display: block" width="180px"
-            height="80px"></a>
+        <a href="/login" class="ml-3">Sign In </a>
+        <a href="/signup">Sign Up</a>
+    </div>
+    <div>
+        <a href="/"><img src="../img/logo.png" style="margin-left: auto; margin-right: auto; display: block"
+                width="180px" height="80px"></a>
     </div>
     <nav class="navbar navbar-expand-sm bg-info navbar-dark justify-content-between ">
         <ul class="navbar-nav ">
@@ -215,6 +215,26 @@
             </div>
             <div>
                 <small>Business license number : 999-55-75416</small>
+            </div>
+            <div>
+                <small input type="text" data-toggle="modal" data-target="#myModal1">관리자모드 로그인</small>
+                <div class="modal fade" id="myModal1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                                <div class="form-group col-lg-8 ">
+                                        <label for="pwd">Password:</label>
+                                        <input type="password" name="login_password" class="form-control"
+                                            placeholder="password">
+                                    </div>
+                            
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-secondary m-3"
+                                    data-dismiss="modal">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
